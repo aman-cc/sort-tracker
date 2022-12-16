@@ -1,0 +1,7 @@
+tracker_max_age: 30   # Max age of object until it is disassociated
+tracker_min_hits: 6   # Min hits of detector object until it is registered by tracker
+video_path: del-drive.mp4   # Video filename present in root dir
+detected_class_num: 2     # 2 for car, 0 for person
+draw: true  # Draw bounding box
+write: true   # Write video to disk
+show: false   # Show tracker output

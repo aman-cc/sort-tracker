@@ -1,0 +1,13 @@
+torch
+torchvision
+opencv-python
+matplotlib
+scikit-image
+filterpy
+pandas
+requests
+ipython
+psutil
+pyyaml
+tqdm
+seaborn
