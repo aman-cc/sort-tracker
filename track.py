@@ -27,6 +27,7 @@ if  __name__ == '__main__':
     show = config['show']
     draw = config['draw']
     write = config['write']
+    det_class_num = config['detection_class_num']
 
     detector = Detection()
     mot_tracker = Sort(max_age=config['tracker_max_age'], min_hits=config['tracker_min_hits'])
@@ -37,7 +38,7 @@ if  __name__ == '__main__':
     while frame is not False:
         pred = detector.predict(frame)
         # Get only car tracking
-        pred = pred[np.where(pred[:,-1] == 2)]
+        pred = pred[np.where(pred[:,-1] == det_class_num)]
         pred = pred[:, :5]     # Get only [x1, y1, x2, y2, score]
 
         # update SORT

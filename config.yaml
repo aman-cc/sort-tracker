@@ -5,3 +5,4 @@ detected_class_num: 2     # 2 for car, 0 for person
 draw: true  # Draw bounding box
 write: true   # Write video to disk
 show: false   # Show tracker output
+detection_class_num: 2    # YOLOv5 class label to be tracked
